@@ -12,7 +12,7 @@ public class Tracker {
     @Id
     private int id;
 
-    @OneToMany(mappedBy = "tracker", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "tracker", cascade = CascadeType.ALL)
     List<Item> items = new ArrayList<>();
 
     public void setItems(List<Item> items) {
